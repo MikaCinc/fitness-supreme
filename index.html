@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-    hey
+    <div id="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Zdravo!</h1>
+            <p class="lead">Popuni ovu anketu i saznaj kakav ti plan i program iz naše ponude odgovara.</p>
+            <hr class="my-4">
+            <p>Ovde ide sekundarni paragraf...</p>
+            <button type="button" class="btn btn-outline-primary btn-lg">Kreni</button>
+        </div>
+        <div id="content">
+            <div id="navigation">
+                <div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary" onclick="showCard(0)">Gender</button>
+                    <button type="button" class="btn btn-secondary disabled" onclick="showCard(1)">Measurements</button>
+                    <button type="button" class="btn btn-secondary disabled" onclick="showCard(2)">Activity</button>
+                    <button type="button" class="btn btn-secondary disabled" onclick="showCard(3)">Goal</button>
+                </div>
+            </div>
+            <div id="cards">
+                <div class="card w-75 mx-auto mt-3">
+                    <h5 class="card-header">Gender</h5>
+                    <div class="card-body">
+                        <h5 class="card-title">Choose gender:</h5>
+                        <p class="card-text">Man on the left, because womans are always right:</p>
+                        <button type="button" class="btn btn-outline-primary">Male</button>
+                        <button type="button" class="btn btn-outline-danger">Female</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
