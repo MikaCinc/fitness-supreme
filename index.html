@@ -22,30 +22,162 @@
 
 <body>
     <div id="container">
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">Fitness-Supreme</a>
+        </nav>
         <div class="jumbotron">
             <h1 class="display-4">Zdravo!</h1>
             <p class="lead">Popuni ovu anketu i saznaj kakav ti plan i program iz naše ponude odgovara.</p>
-            <hr class="my-4">
-            <p>Ovde ide sekundarni paragraf...</p>
-            <button type="button" class="btn btn-outline-primary btn-lg">Kreni</button>
         </div>
         <div id="content">
-            <div id="navigation">
-                <div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-secondary" onclick="showCard(0)">Gender</button>
-                    <button type="button" class="btn btn-secondary disabled" onclick="showCard(1)">Measurements</button>
-                    <button type="button" class="btn btn-secondary disabled" onclick="showCard(2)">Activity</button>
-                    <button type="button" class="btn btn-secondary disabled" onclick="showCard(3)">Goal</button>
-                </div>
+            <div id="navigation" class="btn-group d-flex justify-content-center" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary" onclick="showCard(0)">Pol</button>
+                <button type="button" class="btn btn-secondary disabled" onclick="showCard(1)">Mere</button>
+                <button type="button" class="btn btn-secondary disabled" onclick="showCard(2)">Godine</button>
+                <button type="button" class="btn btn-secondary disabled" onclick="showCard(3)">Aktivnost</button>
+                <button type="button" class="btn btn-secondary disabled" onclick="showCard(4)">Cilj</button>
             </div>
             <div id="cards">
-                <div class="card w-75 mx-auto mt-3">
-                    <h5 class="card-header">Gender</h5>
+                <div class="card w-50 mx-auto mt-3 d-none">
+                    <h5 class="card-header">Pol</h5>
                     <div class="card-body">
-                        <h5 class="card-title">Choose gender:</h5>
+                        <h5 class="card-title">Izaberi pol:</h5>
                         <p class="card-text">Man on the left, because womans are always right:</p>
-                        <button type="button" class="btn btn-outline-primary">Male</button>
-                        <button type="button" class="btn btn-outline-danger">Female</button>
+                        <button type="button" class="btn btn-outline-primary btn-lg mr-5" onclick="gender('male')">Male</button>
+                        <button type="button" class="btn btn-outline-danger btn-lg" onclick="gender('female')">Female</button>
+                    </div>
+                </div>
+                <div class="card w-50 mx-auto mt-3 d-none">
+                    <h5 class="card-header">Mere</h5>
+                    <div class="card-body">
+                        <h5 class="card-title">Unesi tražene podatke:</h5>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="imperial" onchange="changeMetrics('imperial')">
+                            <label class="form-check-label" for="inlineRadio1">Imperial</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" onchange="changeMetrics('metrics')" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="metrics">
+                            <label class="form-check-label" for="inlineRadio2">Metrics</label>
+                        </div>
+                        <div class="collapse" id="imperial">
+                            <div class="card-body">
+                                <form onsubmit="measurements()" action="" method="">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Visina</span>
+                                        </div>
+                                        <input type="text" aria-label="Feet" class="form-control">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">Feet</span>
+                                        </div>
+                                        <input type="text" aria-label="Inches" required class="form-control">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">Inches</span>
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Telesna masa</span>
+                                        </div>
+                                        <input type="text" class="form-control" required aria-label="Amount (to the nearest dollar)">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">lbs</span>
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Željena telesna masa</span>
+                                        </div>
+                                        <input type="text" class="form-control" required aria-label="Amount (to the nearest dollar)">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">lbs</span>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary my-1">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="collapse" id="metrics">
+                            <div class="card-body">
+                                <form onsubmit="return measurements()" action="" method="">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Visina</span>
+                                        </div>
+                                        <input type="text" class="form-control" required aria-label="Amount (to the nearest dollar)">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">cm</span>
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Telesna masa</span>
+                                        </div>
+                                        <input type="text" class="form-control" required aria-label="Amount (to the nearest dollar)">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">kg</span>
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Željena telesna masa</span>
+                                        </div>
+                                        <input type="text" class="form-control" required aria-label="Amount (to the nearest dollar)">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">kg</span>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary my-1">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-50 mx-auto mt-3 d-none">
+                    <h5 class="card-header">Starost</h5>
+                    <div class="card-body">
+                        <h5 class="card-title">Izaberi koliko si star:</h5>
+                        <button type="button" class="btn btn-primary btn-lg" onclick="age(this.innerHTML)">Teens</button>
+                        <button type="button" class="btn btn-info btn-lg" onclick="age(this.innerHTML)">20s</button>
+                        <button type="button" class="btn btn-success btn-lg" onclick="age(this.innerHTML)">30s</button>
+                        <button type="button" class="btn btn-dark btn-lg" onclick="age(this.innerHTML)">40s</button>
+                        <button type="button" class="btn btn-warning btn-lg" onclick="age(this.innerHTML)">50s</button>
+                        <button type="button" class="btn btn-danger btn-lg" onclick="age(this.innerHTML)">60s</button>
+                    </div>
+                </div>
+                <div class="card w-50 mx-auto mt-3 d-none">
+                    <h5 class="card-header">Aktivnost</h5>
+                    <div class="card-body">
+                        <h5 class="card-title">Koliko si aktivan?</h5>
+                        <button type="button" class="btn btn-light btn-lg" onclick="activity(this.innerHTML)">Slabo aktivan</button>
+                        <button type="button" class="btn btn-secondary btn-lg" onclick="activity(this.innerHTML)">Umereno
+                            aktivan
+                        </button>
+                        <button type="button" class="btn btn-dark btn-lg" onclick="activity(this.innerHTML)">Veoma aktivan</button>
+                    </div>
+                </div>
+                <div class="card w-50 mx-auto mt-3 d-none">
+                    <h5 class="card-header">Cilj</h5>
+                    <div class="card-body">
+                        <h5 class="card-title">Koji je tvoj glavni fitnes cilj?</h5>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="goals/original-statement1.png" />
+                                </div>
+                                <div class="col">
+                                    <img src="goals/original-statement2.png" />
+                                </div>
+                                <div class="w-100 mb-3"></div>
+                                <div class="col">
+                                    <img src="goals/original-statement3.png" />
+                                </div>
+                                <div class="col">
+                                    <img src="goals/original-statement4.png" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
