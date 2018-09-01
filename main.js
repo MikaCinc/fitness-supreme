@@ -27,7 +27,7 @@ const navigation = (index) => {
     var btns = document.getElementById("navigation").getElementsByTagName("button");
     for (let i = 0; i < btns.length; i++) {
         if (i === index) {
-            btns[i].className = "btn btn-secondary"
+            btns[i].className = "btn btn-success"
         }
     }
 }
