@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -25,9 +24,9 @@
         <nav class="navbar navbar-light bg-light">
             <a class="navbar-brand" href="#">Fitness-Supreme</a>
         </nav>
-        <div class="jumbotron">
-            <h1 class="display-4">Zdravo!</h1>
-            <p class="lead">Popuni ovu anketu i saznaj kakav ti plan i program iz naše ponude odgovara.</p>
+        <div class="jumbotron" id="jumbo">
+            <h1 class="display-4">Saznaj kakva ishrana i plan treninga baš tebi odgovara!</h1>
+            <p class="lead">Popuni formular</p>
         </div>
         <div id="content">
             <div id="navigation" class="btn-group d-flex justify-content-center" role="group" aria-label="Basic example">
@@ -36,13 +35,14 @@
                 <button type="button" class="btn btn-secondary disabled" onclick="showCard(2)">Godine</button>
                 <button type="button" class="btn btn-secondary disabled" onclick="showCard(3)">Aktivnost</button>
                 <button type="button" class="btn btn-secondary disabled" onclick="showCard(4)">Cilj</button>
+
             </div>
             <div id="cards">
                 <div class="card w-50 mx-auto mt-3 d-none">
                     <h5 class="card-header">Izaberi pol</h5>
                     <div class="card-body">
-                        <button type="button" class="btn btn-outline-primary btn-lg mr-5" onclick="gender('male')">Male</button>
-                        <button type="button" class="btn btn-outline-danger btn-lg" onclick="gender('female')">Female</button>
+                        <button type="button" class="btn btn-outline-primary btn-option btn-lg mr-5" onclick="gender('male')">Muški</button>
+                        <button type="button" class="btn btn-outline-danger btn-option btn-lg" onclick="gender('female')">Ženski</button>
                     </div>
                 </div>
                 <div class="card w-50 mx-auto mt-3 d-none">
@@ -91,7 +91,7 @@
                                             <span class="input-group-text">lbs</span>
                                         </div>
                                     </div>
-                                    <button type="submit" class="btn btn-primary my-1">Submit</button>
+                                    <button type="submit" class="btn btn-primary my-1">Nastavi</button>
                                 </form>
                             </div>
                         </div>
@@ -125,7 +125,7 @@
                                             <span class="input-group-text">kg</span>
                                         </div>
                                     </div>
-                                    <button type="submit" class="btn btn-primary my-1">Submit</button>
+                                    <button type="submit" class="btn btn-primary my-1">Nastavi</button>
                                 </form>
                             </div>
                         </div>
@@ -134,12 +134,12 @@
                 <div class="card w-50 mx-auto mt-3 d-none">
                     <h5 class="card-header">Koliko si star?</h5>
                     <div class="card-body">
-                        <button type="button" class="btn btn-primary btn-lg" onclick="age(this.innerHTML)">Tinejdzer</button>
-                        <button type="button" class="btn btn-info btn-lg" onclick="age(this.innerHTML)">20-te</button>
-                        <button type="button" class="btn btn-success btn-lg" onclick="age(this.innerHTML)">30-te</button>
-                        <button type="button" class="btn btn-dark btn-lg" onclick="age(this.innerHTML)">40-te</button>
-                        <button type="button" class="btn btn-warning btn-lg" onclick="age(this.innerHTML)">50-te</button>
-                        <button type="button" class="btn btn-danger btn-lg" onclick="age(this.innerHTML)">60-te</button>
+                        <button type="button" class="btn btn-primary btn-lg btn-option" onclick="age(this.innerHTML)">Tinejdzer</button>
+                        <button type="button" class="btn btn-info btn-lg btn-option" onclick="age(this.innerHTML)">20-te</button>
+                        <button type="button" class="btn btn-success btn-lg btn-option" onclick="age(this.innerHTML)">30-te</button>
+                        <button type="button" class="btn btn-dark btn-lg btn-option" onclick="age(this.innerHTML)">40-te</button>
+                        <button type="button" class="btn btn-warning btn-lg btn-option" onclick="age(this.innerHTML)">50-te</button>
+                        <button type="button" class="btn btn-danger btn-lg btn-option" onclick="age(this.innerHTML)">60-te</button>
                     </div>
                 </div>
                 <div class="card w-50 mx-auto mt-3 d-none">
