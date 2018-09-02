@@ -21,21 +21,19 @@
 
 <body>
     <div id="container">
-        <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="#">Fitness-Supreme</a>
+        <nav class="navbar navbar-light bg-light" id="nav">
+            <a class="navbar-brand" href="#">FITNESS-SUPREME</a>
         </nav>
         <div class="jumbotron" id="jumbo">
-            <h1 class="display-4">Saznaj kakva ishrana i plan treninga baš tebi odgovara!</h1>
-            <p class="lead">Popuni formular</p>
+            <h1 class="display-4" id="jumbo-text">Saznaj kakva ishrana i plan treninga baš tebi odgovara!</h1>
         </div>
         <div id="content">
-            <div id="navigation" class="btn-group d-flex justify-content-center" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-secondary" onclick="showCard(0)">Pol</button>
-                <button type="button" class="btn btn-secondary disabled" onclick="showCard(1)">Mere</button>
-                <button type="button" class="btn btn-secondary disabled" onclick="showCard(2)">Godine</button>
-                <button type="button" class="btn btn-secondary disabled" onclick="showCard(3)">Aktivnost</button>
-                <button type="button" class="btn btn-secondary disabled" onclick="showCard(4)">Cilj</button>
-
+            <div id="navigation" class="btn-group d-flex justify-content-center mt-3" role="group" aria-label="nav">
+                <button type="button" class="btn btn-secondary text-uppercase" onclick="showCard(0)">Pol</button>
+                <button type="button" class="btn btn-secondary text-uppercase disabled" onclick="showCard(1)">Mere</button>
+                <button type="button" class="btn btn-secondary text-uppercase disabled" onclick="showCard(2)">Starost</button>
+                <button type="button" class="btn btn-secondary text-uppercase disabled" onclick="showCard(3)">Aktivnost</button>
+                <button type="button" class="btn btn-secondary text-uppercase disabled" onclick="showCard(4)">Cilj</button>
             </div>
             <div id="cards">
                 <div class="card mx-auto mt-3 d-none">
@@ -49,9 +47,13 @@
                             <div class="row justify-content-md-center align-items-center">
                                 <div class="col">
                                     <img src="signs/male.png" onclick="gender('male')" />
+                                    <br/>
+                                    <p class="sign-text" onclick="gender('male')">MUŠKI</p>
                                 </div>
                                 <div class="col">
                                     <img src="signs/female.png" onclick="gender('female')" />
+                                    <br/>
+                                    <p class="sign-text" onclick="gender('female')">ŽENSKI</p>
                                 </div>
                             </div>
                         </div>
@@ -76,11 +78,11 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">Visina</span>
                                         </div>
-                                        <input type="text" aria-label="Feet" class="form-control">
+                                        <input type="number" aria-label="Feet" class="form-control">
                                         <div class="input-group-append">
                                             <span class="input-group-text">Feet</span>
                                         </div>
-                                        <input type="text" aria-label="Inches" required class="form-control">
+                                        <input type="number" aria-label="Inches" required class="form-control">
                                         <div class="input-group-append">
                                             <span class="input-group-text">Inches</span>
                                         </div>
@@ -89,7 +91,7 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">Telesna masa</span>
                                         </div>
-                                        <input type="text" class="form-control" required aria-label="Amount (to the nearest dollar)">
+                                        <input type="number" class="form-control" required aria-label="Amount (to the nearest dollar)">
                                         <div class="input-group-append">
                                             <span class="input-group-text">lbs</span>
                                         </div>
@@ -98,7 +100,7 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">Željena telesna masa</span>
                                         </div>
-                                        <input type="text" class="form-control" required aria-label="Amount (to the nearest dollar)">
+                                        <input type="number" class="form-control" required aria-label="Amount (to the nearest dollar)">
                                         <div class="input-group-append">
                                             <span class="input-group-text">lbs</span>
                                         </div>
@@ -114,7 +116,7 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">Visina</span>
                                         </div>
-                                        <input type="text" class="form-control" required aria-label="Amount (to the nearest dollar)">
+                                        <input type="number" class="form-control" required aria-label="Amount (to the nearest dollar)">
                                         <div class="input-group-append">
                                             <span class="input-group-text">cm</span>
                                         </div>
@@ -123,7 +125,7 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">Telesna masa</span>
                                         </div>
-                                        <input type="text" class="form-control" required aria-label="Amount (to the nearest dollar)">
+                                        <input type="number" class="form-control" required aria-label="Amount (to the nearest dollar)">
                                         <div class="input-group-append">
                                             <span class="input-group-text">kg</span>
                                         </div>
@@ -132,7 +134,7 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">Željena telesna masa</span>
                                         </div>
-                                        <input type="text" class="form-control" required aria-label="Amount (to the nearest dollar)">
+                                        <input type="number" class="form-control" required aria-label="Amount (to the nearest dollar)">
                                         <div class="input-group-append">
                                             <span class="input-group-text">kg</span>
                                         </div>

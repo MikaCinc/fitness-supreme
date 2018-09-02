@@ -4,11 +4,28 @@ body {
     background-repeat:   no-repeat;
     background-position: center center;
     background-attachment: fixed;
+    transition-duration: 0.4s;
+}
+
+#nav {
+    opacity: 0.9;
 }
 
 #jumbo {
     opacity: 0.6;
     padding: 16px 16px;
+    margin-bottom: 0px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-style: italic;
+    display: block;
+}
+
+#jumbo-text {
+    font-size: 4vw;
 }
 
 .card {
@@ -16,18 +33,23 @@ body {
     display: none;
 }
 
+.card-width {
+    width: 50vw;
+}
+
 .disabled {
     pointer-events: none;
 }
 
 img {
-    width: 170px;
+    width: 160px;
     height: auto;
     transition-duration: 0.4s;
+    cursor: pointer;
 }
 
 img:hover {
-    width: 200px;
+    width: 190px;
     height: auto;
 }
 
@@ -56,4 +78,17 @@ img:hover {
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
+}
+
+.sign-text {
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+    font-stretch: condensed;
+    text-transform: uppercase;
+    text-align: center;
+    color: grey;
+    margin-top: 8px;
+    cursor: pointer;
+    display: inline-block;
 }
