@@ -16,7 +16,7 @@ const showCard = (index) => {
     var cards = document.getElementsByClassName("card");
     for (let i = 0; i < cards.length; i++) {
         if (i === index) {
-            cards[i].className = "card w-50 mx-auto mt-3"
+            cards[i].className = "card w-50 mx-auto mt-3 text-center"
         } else {
             cards[i].className = "card w-50 mx-auto mt-3 d-none"
         }

@@ -38,11 +38,23 @@
 
             </div>
             <div id="cards">
-                <div class="card w-auto mx-auto mt-3 d-none">
+                <div class="card mx-auto mt-3 d-none">
                     <h5 class="card-header">Izaberi pol</h5>
                     <div class="card-body">
+                        <!--
                         <button type="button" class="btn btn-outline-primary btn-option btn-lg mr-5" onclick="gender('male')">Muški</button>
                         <button type="button" class="btn btn-outline-danger btn-option btn-lg" onclick="gender('female')">Ženski</button>
+                        -->
+                        <div class="container">
+                            <div class="row justify-content-md-center align-items-center">
+                                <div class="col">
+                                    <img src="signs/male.png" onclick="gender('male')" />
+                                </div>
+                                <div class="col">
+                                    <img src="signs/female.png" onclick="gender('female')" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="card w-50 mx-auto mt-3 d-none">
@@ -134,12 +146,32 @@
                 <div class="card w-50 mx-auto mt-3 d-none">
                     <h5 class="card-header">Koliko si star?</h5>
                     <div class="card-body">
-                        <button type="button" class="btn btn-primary btn-lg btn-option" onclick="age(this.innerHTML)">Tinejdzer</button>
-                        <button type="button" class="btn btn-info btn-lg btn-option" onclick="age(this.innerHTML)">20-te</button>
-                        <button type="button" class="btn btn-success btn-lg btn-option" onclick="age(this.innerHTML)">30-te</button>
-                        <button type="button" class="btn btn-dark btn-lg btn-option" onclick="age(this.innerHTML)">40-te</button>
-                        <button type="button" class="btn btn-warning btn-lg btn-option" onclick="age(this.innerHTML)">50-te</button>
-                        <button type="button" class="btn btn-danger btn-lg btn-option" onclick="age(this.innerHTML)">60-te</button>
+                        <div class="container">
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <button type="button" class="btn btn-primary btn-lg btn-option" onclick="age(this.innerHTML)">Tinejdzer</button>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-info btn-lg btn-option" onclick="age(this.innerHTML)">20-te</button>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <button type="button" class="btn btn-success btn-lg btn-option" onclick="age(this.innerHTML)">30-te</button>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-dark btn-lg btn-option" onclick="age(this.innerHTML)">40-te</button>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <button type="button" class="btn btn-warning btn-lg btn-option" onclick="age(this.innerHTML)">50-te</button>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-danger btn-lg btn-option" onclick="age(this.innerHTML)">60-te</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="card w-50 mx-auto mt-3 d-none">

@@ -21,6 +21,12 @@ body {
 }
 
 img {
+    width: 170px;
+    height: auto;
+    transition-duration: 0.4s;
+}
+
+img:hover {
     width: 200px;
     height: auto;
 }
