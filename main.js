@@ -8,11 +8,11 @@ var State = {
 }
 
 const initial = () => {
-    /* showCard(0);
-    navigation(0); */
+    showCard(0);
+    navigation(0);
 
-    showCard(5);
-    navigation(undefined, true);
+    /* showCard(5);
+    navigation(undefined, true); */
 }
 
 /* function detectmob() {
