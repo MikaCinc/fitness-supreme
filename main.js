@@ -11,6 +11,8 @@ const initial = () => {
     showCard(0);
     navigation(0);
 
+    /* $("#metrics").collapse('show'); */
+
     /* showCard(5);
     navigation(undefined, true); */
 }
@@ -52,17 +54,18 @@ const gender = (type) => {
     State.Gender = type
     showCard(1);
     navigation(1);
+    changeMetrics('metrics')
 }
 
 
 const changeMetrics = (type) => {
     if (type === "metrics") {
-        $("#" + type).collapse('show');
-        $("#imperial").collapse('hide');
-    } else {
+        $("#metrics").collapse('show');
+        /* $("#imperial").collapse('hide'); */
+    } /* else {
         $("#" + type).collapse('show');
         $("#metrics").collapse('hide');
-    }
+    } */
 }
 
 const measurements = () => {

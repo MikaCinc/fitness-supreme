@@ -60,6 +60,7 @@
                 <div class="card w-50 mx-auto mt-3 d-none">
                     <h5 class="card-header">Unesi tražene mere</h5>
                     <div class="card-body">
+                        <!--
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="imperial" onchange="changeMetrics('imperial')">
                             <label class="form-check-label" for="inlineRadio1">Imperial</label>
@@ -69,70 +70,40 @@
                                 value="metrics">
                             <label class="form-check-label" for="inlineRadio2">Metrics</label>
                         </div>
-                        <div class="collapse" id="imperial">
-                            <div class="card-body">
-                                <form onsubmit="return measurements()" action="" method="">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">Visina</span>
-                                        </div>
-                                        <input type="number" aria-label="Feet" class="form-control">
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">Feet</span>
-                                        </div>
-                                        <input type="number" aria-label="Inches" required class="form-control">
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">Inches</span>
-                                        </div>
-                                    </div>
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">Telesna masa</span>
-                                        </div>
-                                        <input type="number" class="form-control" required aria-label="Amount (to the nearest dollar)">
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">lbs</span>
-                                        </div>
-                                    </div>
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">Željena telesna masa</span>
-                                        </div>
-                                        <input type="number" class="form-control" required aria-label="Amount (to the nearest dollar)">
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">lbs</span>
-                                        </div>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary my-1">Nastavi</button>
-                                </form>
-                            </div>
-                        </div>
+                        -->
                         <div class="collapse" id="metrics">
                             <div class="card-body">
                                 <form onsubmit="return measurements()" action="" method="">
                                     <div class="input-group mb-3">
+                                        <!--
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">Visina</span>
                                         </div>
-                                        <input type="number" class="form-control" required aria-label="Amount (to the nearest dollar)">
+                                        -->
+                                        
+                                        <input type="number" placeholder="Visina" class="form-control" required aria-label="Amount (to the nearest dollar)">
                                         <div class="input-group-append">
                                             <span class="input-group-text">cm</span>
                                         </div>
                                     </div>
                                     <div class="input-group mb-3">
+                                        <!--
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">Telesna masa</span>
                                         </div>
-                                        <input type="number" class="form-control" required aria-label="Amount (to the nearest dollar)">
+                                        -->
+                                        <input type="number" placeholder="Telesna masa" class="form-control" required aria-label="Amount (to the nearest dollar)">
                                         <div class="input-group-append">
                                             <span class="input-group-text">kg</span>
                                         </div>
                                     </div>
                                     <div class="input-group mb-3">
+                                        <!--
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">Željena telesna masa</span>
                                         </div>
-                                        <input type="number" class="form-control" required aria-label="Amount (to the nearest dollar)">
+                                        -->
+                                        <input type="number" placeholder="Željena telesna masa" class="form-control" required aria-label="Amount (to the nearest dollar)">
                                         <div class="input-group-append">
                                             <span class="input-group-text">kg</span>
                                         </div>
@@ -147,28 +118,28 @@
                     <h5 class="card-header">Koliko si star?</h5>
                     <div class="card-body">
                         <div class="container">
-                            <div class="row mb-3">
+                            <div class="row mb-2">
                                 <div class="col">
-                                    <button type="button" class="btn btn-primary btn-lg btn-option" onclick="age(this.innerHTML)">Tinejdzer</button>
+                                    <img src="ages/teen.png" class="img-fluid" onclick="age()" />
                                 </div>
                                 <div class="col">
-                                    <button type="button" class="btn btn-info btn-lg btn-option" onclick="age(this.innerHTML)">20-te</button>
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <div class="col">
-                                    <button type="button" class="btn btn-success btn-lg btn-option" onclick="age(this.innerHTML)">30-te</button>
-                                </div>
-                                <div class="col">
-                                    <button type="button" class="btn btn-dark btn-lg btn-option" onclick="age(this.innerHTML)">40-te</button>
+                                    <img src="ages/20.png" class="img-fluid" onclick="age()" />
                                 </div>
                             </div>
-                            <div class="row mb-3">
+                            <div class="row mb-2">
                                 <div class="col">
-                                    <button type="button" class="btn btn-warning btn-lg btn-option" onclick="age(this.innerHTML)">50-te</button>
+                                    <img src="ages/30.png" class="img-fluid" onclick="age()" />
                                 </div>
                                 <div class="col">
-                                    <button type="button" class="btn btn-danger btn-lg btn-option" onclick="age(this.innerHTML)">60-te</button>
+                                    <img src="ages/40.png" class="img-fluid" onclick="age()" />
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col">
+                                    <img src="ages/50.png" class="img-fluid" onclick="age()" />
+                                </div>
+                                <div class="col">
+                                    <img src="ages/60.png" class="img-fluid" onclick="age()" />
                                 </div>
                             </div>
                         </div>
@@ -177,11 +148,21 @@
                 <div class="card w-50 mx-auto mt-3 d-none">
                     <h5 class="card-header">Koliko si aktivan?</h5>
                     <div class="card-body">
-                        <button type="button" class="btn btn-light btn-lg" onclick="activity(this.innerHTML)">Slabo aktivan</button>
-                        <button type="button" class="btn btn-secondary btn-lg" onclick="activity(this.innerHTML)">Umereno
-                            aktivan
-                        </button>
-                        <button type="button" class="btn btn-dark btn-lg" onclick="activity(this.innerHTML)">Veoma aktivan</button>
+                        <div class="container">
+                            <div class="row mb-2">
+                                <div class="col">
+                                    <img src="activity/1.png" class="img-fluid" onclick="activity()" />
+                                </div>
+                                <div class="col">
+                                    <img src="activity/2.png" class="img-fluid" onclick="activity()" />
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col">
+                                    <img src="activity/3.png" class="img-fluid" onclick="activity()" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="card w-50 mx-auto mt-3 d-none">
@@ -213,7 +194,7 @@
                         <p class="card-text text-uppercase">'Cena programa'</p>
                         <a href="#" class="card-link">Card link</a>
                         <a href="#" class="card-link">Another link</a>
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>
