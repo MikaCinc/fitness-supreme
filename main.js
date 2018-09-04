@@ -8,8 +8,11 @@ var State = {
 }
 
 const initial = () => {
-    showCard(0);
-    navigation(0);
+    /* showCard(0);
+    navigation(0); */
+
+    showCard(5);
+    navigation(undefined, true);
 }
 
 /* function detectmob() {
@@ -31,11 +34,16 @@ const showCard = (index) => {
     }
 }
 
-const navigation = (index) => {
+const navigation = (index, hide) => {
+    if(hide) {
+        document.getElementById("navigation").className = "d-none";
+        return;
+    }
     var btns = document.getElementById("navigation").getElementsByTagName("button");
     for (let i = 0; i < btns.length; i++) {
         if (i === index) {
             btns[i].className = "btn btn-success text-uppercase custom-btn-size";
+            break;
         }
     }
 }
@@ -73,4 +81,10 @@ const activity = (activity) => {
     State.activity = activity;
     showCard(4);
     navigation(4);
+}
+
+const program = (program) => {
+    State.Program = program;
+    showCard(5);
+    navigation(undefined, true);
 }

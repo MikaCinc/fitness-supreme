@@ -26,7 +26,7 @@
         </nav>
 
         <div id="content">
-            <div id="navigation" class="btn-group d-flex justify-content-center mt-3" role="group" aria-label="nav">
+            <div id="navigation" class="btn-group d-flex justify-content-center mt-3 hidden" role="group" aria-label="nav">
                 <button type="button" class="btn btn-secondary custom-btn-size text-uppercase" onclick="showCard(0)">Pol</button>
                 <button type="button" class="btn btn-secondary custom-btn-size text-uppercase disabled" onclick="showCard(1)">Mere</button>
                 <button type="button" class="btn btn-secondary custom-btn-size text-uppercase disabled" onclick="showCard(2)">Starost</button>
@@ -44,12 +44,12 @@
                         <div class="container">
                             <div class="row justify-content-md-center align-items-center">
                                 <div class="col">
-                                    <img src="signs/male.png" onclick="gender('male')" />
+                                    <img src="signs/male.png" class="img-fluid" onclick="gender('male')" />
                                     <br/>
                                     <p class="sign-text" onclick="gender('male')">MUŠKI</p>
                                 </div>
                                 <div class="col">
-                                    <img src="signs/female.png" onclick="gender('female')" />
+                                    <img src="signs/female.png" class="img-fluid" onclick="gender('female')" />
                                     <br/>
                                     <p class="sign-text" onclick="gender('female')">ŽENSKI</p>
                                 </div>
@@ -190,21 +190,30 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col">
-                                    <img src="goals/original-statement1.png" />
+                                    <img src="goals/original-statement1.png" onclick="program(0)" />
                                 </div>
                                 <div class="col">
-                                    <img src="goals/original-statement2.png" />
+                                    <img src="goals/original-statement2.png" onclick="program(1)" />
                                 </div>
                                 <div class="w-100 mb-3"></div>
                                 <div class="col">
-                                    <img src="goals/original-statement3.png" />
+                                    <img src="goals/original-statement3.png" onclick="program(2)" />
                                 </div>
                                 <div class="col">
-                                    <img src="goals/original-statement4.png" />
+                                    <img src="goals/original-statement4.png" onclick="program(3)" />
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="card w-50 mx-auto mt-3 d-none">
+                    <div class="card-body">
+                        <h4 class="card-title text-uppercase" id="program-name">'Ime programa'</h4>
+                        <h6 class="card-subtitle mb-2 text-muted text-uppercase">Preporučeni program za tebe</h6>
+                        <p class="card-text text-uppercase">'Cena programa'</p>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                      </div>
                 </div>
             </div>
         </div>
