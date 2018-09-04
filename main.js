@@ -8,8 +8,8 @@ var State = {
 }
 
 const initial = () => {
-    showCard(4);
-    navigation(4);
+    showCard(0);
+    navigation(0);
 
     /* $("#metrics").collapse('show'); */
 

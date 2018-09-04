@@ -34,6 +34,9 @@
         line-height: 1.5!important;
     }
 
+    #jumbo-text {
+        font-size: 3.7vw;
+    }
 }
 
 @media (min-width: 576px) {
@@ -70,6 +73,10 @@
         padding: 10px 16px!important;
         font-size: 18px!important;
         line-height: 1.3333333!important;
+    }
+
+    #jumbo-text {
+        font-size: 3vw;
     }
 }
 
@@ -108,10 +115,6 @@ body {
     height: auto;
     position: fixed;
     z-index: 0;
-}
-
-#jumbo-text {
-    font-size: 3.5vw;
 }
 
 #cards-div {
