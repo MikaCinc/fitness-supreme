@@ -150,10 +150,11 @@ body {
 }
 
 .btn-option {
-    width: 120px;
-    height: 120px;
-    font-size: 24px;
-    font-weight: 700;
+    width: 130px;
+    height: 140px;
+    font-size: 12px !important;
     text-transform: uppercase;
     text-align: center;
+    white-space:normal !important;
+    word-wrap: break-word; 
 }
