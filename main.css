@@ -4,8 +4,21 @@
         width: 100%;
     }
 
+    .sign-text {
+        font-size: 16px;
+        font-weight: 700;
+        font-style: italic;
+        font-stretch: condensed;
+        text-transform: uppercase;
+        text-align: center;
+        color: grey;
+        margin-top: 8px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
     img {
-        width: 80px;
+        width: 100px;
         height: auto;
         transition-duration: 0.4s;
         cursor: pointer;
@@ -14,11 +27,31 @@
     #navigation {
         max-width: 100%;
     }
+
+    .custom-btn-size {
+        padding: 5px 10px!important;
+        font-size: 12px!important;
+        line-height: 1.5!important;
+    }
+
 }
 
 @media (min-width: 576px) {
     .card-width {
         width: 50%;
+    }
+
+    .sign-text {
+        font-size: 20px;
+        font-weight: 700;
+        font-style: italic;
+        font-stretch: condensed;
+        text-transform: uppercase;
+        text-align: center;
+        color: grey;
+        margin-top: 8px;
+        cursor: pointer;
+        display: inline-block;
     }
 
     img {
@@ -31,6 +64,12 @@
     img:hover {
         width: 180px;
         height: auto;
+    }
+
+    .custom-btn-size {
+        padding: 10px 16px!important;
+        font-size: 18px!important;
+        line-height: 1.3333333!important;
     }
 }
 
@@ -115,17 +154,4 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
-}
-
-.sign-text {
-    font-size: 20px;
-    font-weight: 700;
-    font-style: italic;
-    font-stretch: condensed;
-    text-transform: uppercase;
-    text-align: center;
-    color: grey;
-    margin-top: 8px;
-    cursor: pointer;
-    display: inline-block;
 }
