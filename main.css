@@ -37,6 +37,16 @@
     #jumbo-text {
         font-size: 3.7vw;
     }
+
+    .btn-option {
+        width: 120px;
+        height: 140px;
+        text-transform: uppercase;
+        text-align: center;
+        white-space:normal !important;
+        word-wrap: break-word; 
+        font-size: 11px !important;
+    }
 }
 
 @media (min-width: 576px) {
@@ -77,6 +87,16 @@
 
     #jumbo-text {
         font-size: 3vw;
+    }
+
+    .btn-option {
+        width: 130px;
+        height: 140px;
+        text-transform: uppercase;
+        text-align: center;
+        white-space:normal !important;
+        word-wrap: break-word; 
+        font-size: 12px !important;
     }
 }
 
@@ -150,14 +170,4 @@ body {
     text-align: center;
     color: #fff;
     margin-top: 20px;
-}
-
-.btn-option {
-    width: 130px;
-    height: 140px;
-    font-size: 12px !important;
-    text-transform: uppercase;
-    text-align: center;
-    white-space:normal !important;
-    word-wrap: break-word; 
 }
