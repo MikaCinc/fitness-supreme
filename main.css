@@ -17,7 +17,7 @@
         display: inline-block;
     }
 
-    img {
+    .img-option {
         width: 100px;
         height: auto;
         transition-duration: 0.4s;
@@ -57,14 +57,14 @@
         display: inline-block;
     }
 
-    img {
+    .img-option {
         width: 160px;
         height: auto;
         transition-duration: 0.4s;
         cursor: pointer;
     }
 
-    img:hover {
+    .img-option:hover {
         width: 180px;
         height: auto;
     }

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>FITNESS-SUPREME</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -22,7 +23,10 @@
 <body>
     <div id="container">
         <nav class="navbar navbar-light bg-light justify-content-center" id="nav-bar">
-            <a class="navbar-brand" href="#">FITNESS-SUPREME</a>
+            <a class="navbar-brand" href="https://www.fitness-supreme.com/">
+                <img src="favicon/favicon.ico" width="30" height="30" class="d-inline-block align-top" alt="">
+                FITNESS-SUPREME
+            </a>
         </nav>
 
         <div id="content">
@@ -44,12 +48,12 @@
                         <div class="container">
                             <div class="row justify-content-md-center align-items-center">
                                 <div class="col">
-                                    <img src="signs/male.png" class="img-fluid" onclick="gender('male')" />
+                                    <img src="signs/male.png" class="img-fluid img-option" onclick="gender('male')" />
                                     <br/>
                                     <p class="sign-text" onclick="gender('male')">MUŠKI</p>
                                 </div>
                                 <div class="col">
-                                    <img src="signs/female.png" class="img-fluid" onclick="gender('female')" />
+                                    <img src="signs/female.png" class="img-fluid img-option" onclick="gender('female')" />
                                     <br/>
                                     <p class="sign-text" onclick="gender('female')">ŽENSKI</p>
                                 </div>
@@ -120,26 +124,26 @@
                         <div class="container">
                             <div class="row mb-2">
                                 <div class="col">
-                                    <img src="ages/teen.png" class="img-fluid" onclick="age()" />
+                                    <img src="ages/teen.png" class="img-fluid img-option" onclick="age()" />
                                 </div>
                                 <div class="col">
-                                    <img src="ages/20.png" class="img-fluid" onclick="age()" />
-                                </div>
-                            </div>
-                            <div class="row mb-2">
-                                <div class="col">
-                                    <img src="ages/30.png" class="img-fluid" onclick="age()" />
-                                </div>
-                                <div class="col">
-                                    <img src="ages/40.png" class="img-fluid" onclick="age()" />
+                                    <img src="ages/20.png" class="img-fluid img-option" onclick="age()" />
                                 </div>
                             </div>
                             <div class="row mb-2">
                                 <div class="col">
-                                    <img src="ages/50.png" class="img-fluid" onclick="age()" />
+                                    <img src="ages/30.png" class="img-fluid img-option" onclick="age()" />
                                 </div>
                                 <div class="col">
-                                    <img src="ages/60.png" class="img-fluid" onclick="age()" />
+                                    <img src="ages/40.png" class="img-fluid img-option" onclick="age()" />
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col">
+                                    <img src="ages/50.png" class="img-fluid img-option" onclick="age()" />
+                                </div>
+                                <div class="col">
+                                    <img src="ages/60.png" class="img-fluid img-option" onclick="age()" />
                                 </div>
                             </div>
                         </div>
@@ -151,15 +155,15 @@
                         <div class="container">
                             <div class="row mb-2">
                                 <div class="col">
-                                    <img src="activity/1.png" class="img-fluid" onclick="activity()" />
+                                    <img src="activity/1.png" class="img-fluid img-option" onclick="activity()" />
                                 </div>
                                 <div class="col">
-                                    <img src="activity/2.png" class="img-fluid" onclick="activity()" />
+                                    <img src="activity/2.png" class="img-fluid img-option" onclick="activity()" />
                                 </div>
                             </div>
                             <div class="row mb-2">
                                 <div class="col">
-                                    <img src="activity/3.png" class="img-fluid" onclick="activity()" />
+                                    <img src="activity/3.png" class="img-fluid img-option" onclick="activity()" />
                                 </div>
                             </div>
                         </div>
@@ -195,9 +199,13 @@
                     <div class="card-body">
                         <h4 class="card-title text-uppercase" id="program-name">'Ime programa'</h4>
                         <h6 class="card-subtitle mb-2 text-muted text-uppercase">Preporučeni program za tebe</h6>
-                        <p class="card-text text-uppercase">'Cena programa'</p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
+                        <p class="card-text text-uppercase" id="program-price">'Cena programa'</p>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="M5B24N7ZVTWG8">
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        </form>
+                        <a href="bg.jpg" download target="_blank">Download</a>
                     </div>
                 </div>
             </div>

@@ -2,6 +2,33 @@ window.onload = () => {
     initial()
 }
 
+const Programs = [
+    {
+        ID: 0,
+        Name: "Program 1",
+        Price: "20e",
+        Description: ""
+    },
+    {
+        ID: 1,
+        Name: "Program 2",
+        Price: "20e",
+        Description: ""
+    },
+    {
+        ID: 2,
+        Name: "Program 3",
+        Price: "20e",
+        Description: ""
+    },
+    {
+        ID: 3,
+        Name: "Program 4",
+        Price: "20e",
+        Description: ""
+    },
+]
+
 var State = {
     Gender: "",
     Age: "",
@@ -10,8 +37,6 @@ var State = {
 const initial = () => {
     showCard(0);
     navigation(0);
-
-    /* $("#metrics").collapse('show'); */
 
     /* showCard(5);
     navigation(undefined, true); */
@@ -86,8 +111,12 @@ const activity = (activity) => {
     navigation(4);
 }
 
-const program = (program) => {
-    State.Program = program;
+const program = (id) => {
+    State.Program = Programs[id];
+    const { Program } = State;
+    document.getElementById("program-name").innerHTML = Program.Name;
+    document.getElementById("program-price").innerHTML = Program.Price;
+    // UI CHANGES
     showCard(5);
     navigation(undefined, true);
 }
