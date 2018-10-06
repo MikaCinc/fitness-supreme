@@ -62,7 +62,7 @@ const showCard = (index) => {
 }
 
 const navigation = (index, hide) => {
-    if(hide) {
+    if (hide) {
         document.getElementById("navigation").className = "d-none";
         return;
     }
@@ -112,11 +112,19 @@ const activity = (activity) => {
 }
 
 const program = (id) => {
+    // Put program in state
     State.Program = Programs[id];
+    // UI CHANGES
+    showCard(5);
+    navigation(undefined, true);
+}
+
+const emailForm = () => {
     const { Program } = State;
     document.getElementById("program-name").innerHTML = Program.Name;
     document.getElementById("program-price").innerHTML = Program.Price;
     // UI CHANGES
-    showCard(5);
-    navigation(undefined, true);
+    showCard(6);
+    //navigation(undefined, true);
+    return false;
 }

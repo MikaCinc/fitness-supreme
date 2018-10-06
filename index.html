@@ -49,12 +49,12 @@
                             <div class="row justify-content-md-center align-items-center">
                                 <div class="col">
                                     <img src="signs/male.png" class="img-fluid img-option" onclick="gender('male')" />
-                                    <br/>
+                                    <br />
                                     <p class="sign-text" onclick="gender('male')">MUŠKI</p>
                                 </div>
                                 <div class="col">
                                     <img src="signs/female.png" class="img-fluid img-option" onclick="gender('female')" />
-                                    <br/>
+                                    <br />
                                     <p class="sign-text" onclick="gender('female')">ŽENSKI</p>
                                 </div>
                             </div>
@@ -85,7 +85,8 @@
                                         </div>
                                         -->
 
-                                        <input type="number" placeholder="Visina" class="form-control" required aria-label="Amount (to the nearest dollar)">
+                                        <input type="number" placeholder="Visina" class="form-control" required
+                                            aria-label="Amount (to the nearest dollar)">
                                         <div class="input-group-append">
                                             <span class="input-group-text">cm</span>
                                         </div>
@@ -96,7 +97,8 @@
                                             <span class="input-group-text">Telesna masa</span>
                                         </div>
                                         -->
-                                        <input type="number" placeholder="Telesna masa" class="form-control" required aria-label="Amount (to the nearest dollar)">
+                                        <input type="number" placeholder="Telesna masa" class="form-control" required
+                                            aria-label="Amount (to the nearest dollar)">
                                         <div class="input-group-append">
                                             <span class="input-group-text">kg</span>
                                         </div>
@@ -107,7 +109,8 @@
                                             <span class="input-group-text">Željena telesna masa</span>
                                         </div>
                                         -->
-                                        <input type="number" placeholder="Željena telesna masa" class="form-control" required aria-label="Amount (to the nearest dollar)">
+                                        <input type="number" placeholder="Željena telesna masa" class="form-control"
+                                            required aria-label="Amount (to the nearest dollar)">
                                         <div class="input-group-append">
                                             <span class="input-group-text">kg</span>
                                         </div>
@@ -196,15 +199,32 @@
                     </div>
                 </div>
                 <div class="card w-50 mx-auto mt-3 d-none">
+                    <h5 class="card-header">Sada si na korak od tvog cilja</h5>
+                    <div class="card-body">
+                        <form onsubmit="return emailForm()" action="" method="">
+                            <h4 class="card-title text-uppercase" id="program-name"></h4>
+                            <label for="emailInput">Unesi E-mail na koji ću ti poslati tvoj personalizovani program
+                                treninga</label>
+                            <input type="email" class="form-control" id="emailInput" aria-describedby="emailField"
+                                placeholder="Upiši e-mail" required>
+                            <small id="emailHelp" class="form-text text-muted">Nikada nećemo deliti vaš e-mail ni sa
+                                kim drugim.</small>
+                            <br />
+                            <button type="submit" class="btn btn-primary my-1">Nastavi</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="card w-50 mx-auto mt-3 d-none">
                     <div class="card-body">
                         <h4 class="card-title text-uppercase" id="program-name">'Ime programa'</h4>
                         <h6 class="card-subtitle mb-2 text-muted text-uppercase">Preporučeni program za tebe</h6>
                         <p class="card-text text-uppercase" id="program-price">'Cena programa'</p>
-                        <br/>
+                        <br />
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                             <input type="hidden" name="cmd" value="_s-xclick">
                             <input type="hidden" name="hosted_button_id" value="M5B24N7ZVTWG8">
-                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif"
+                                border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                         </form>
                         <!--
                         <a href="bg.jpg" download target="_blank">Download</a>
