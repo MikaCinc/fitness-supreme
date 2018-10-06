@@ -38,6 +38,11 @@ const initial = () => {
     showCard(0);
     navigation(0);
 
+    for (let i = 0; i < 50; i++) {
+        console.log(Math.random() * 10000000000)
+    }
+
+
     /* showCard(5);
     navigation(undefined, true); */
 }
