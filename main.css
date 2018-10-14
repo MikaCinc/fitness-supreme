@@ -32,6 +32,12 @@
         padding-bottom: 20px;
     }
 
+    #promo-video {
+        width: 300px;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
     #navigation {
         max-width: 100%;
     }
@@ -99,6 +105,12 @@
         padding: 10px 16px!important;
         font-size: 18px!important;
         line-height: 1.3333333!important;
+    }
+
+    #promo-video {
+        width: 600px;
+        height: auto;
+        margin-bottom: 30px;
     }
 
     #jumbo-text {
