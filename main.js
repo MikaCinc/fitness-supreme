@@ -32,19 +32,16 @@ const Programs = [
 var State = {
     Gender: "",
     Age: "",
+    interval: null
 }
 
 const initial = () => {
-    showCard(0);
-    navigation(0);
+    /* showCard(0);
+    navigation(0); */
 
-    for (let i = 0; i < 50; i++) {
-        console.log(Math.random() * 10000000000)
-    }
-
-
-    /* showCard(5);
-    navigation(undefined, true); */
+    showCard(6);
+    navigation(undefined, true);
+    animate();
 }
 
 /* function detectmob() {
@@ -54,6 +51,22 @@ const initial = () => {
         return false;
     }
 } */
+
+
+const animate = () => {
+    /* console.log("hererere")
+    var btn = document.getElementsByClassName("btn-animate");
+
+    for(let i = 0; i<btn.length; i++) {
+        State.interval = setInterval(() => {
+            btn[i].style.Top += 10; 
+        } ,500)
+        
+    }
+
+    btn.animate({ top: '10px', opacity: '0.9' }, "slow");
+    btn.animate({ top: '-10px', opacity: '1' }, "slow"); */
+}
 
 const showCard = (index) => {
     var cards = document.getElementsByClassName("card");
@@ -130,6 +143,7 @@ const emailForm = () => {
     document.getElementById("program-price").innerHTML = Program.Price;
     // UI CHANGES
     showCard(6);
+    //animate();
     //navigation(undefined, true);
     return false;
 }
