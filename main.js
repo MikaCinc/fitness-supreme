@@ -36,12 +36,12 @@ var State = {
 }
 
 const initial = () => {
-    /* showCard(0);
-    navigation(0); */
+    showCard(0);
+    navigation(0);
 
-    showCard(6);
+    /* showCard(6);
     navigation(undefined, true);
-    animate();
+    animate(); */
 }
 
 /* function detectmob() {
