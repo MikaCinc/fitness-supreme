@@ -36,12 +36,12 @@ var State = {
 }
 
 const initial = () => {
-    /* showCard(0);
-    navigation(0); */
+    showCard(0);
+    navigation(0);
 
-    showCard(6);
+    /* showCard(6);
     navigation(undefined, true);
-    animate();
+    animate(); */
 }
 
 /* function detectmob() {
@@ -139,10 +139,11 @@ const program = (id) => {
 
 const emailForm = () => {
     const { Program } = State;
-    document.getElementById("program-name").innerHTML = Program.Name;
-    document.getElementById("program-price").innerHTML = Program.Price;
     // UI CHANGES
     showCard(6);
+    // Video autoplay
+    var myVideo = document.getElementById("promo-video");
+    myVideo.play();
     //animate();
     //navigation(undefined, true);
     return false;

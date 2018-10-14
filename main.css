@@ -24,6 +24,14 @@
         cursor: pointer;
     }
 
+    .img-promo {
+        width: 300px;
+        height: auto;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        padding-bottom: 20px;
+    }
+
     #navigation {
         max-width: 100%;
     }
@@ -72,6 +80,14 @@
         height: auto;
         transition-duration: 0.4s;
         cursor: pointer;
+    }
+
+    .img-promo {
+        width: 450px;
+        height: auto;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        padding-bottom: 40px;
     }
 
     .img-option:hover {
@@ -201,4 +217,9 @@ body {
 @keyframes action {
     0% { transform: translateY(0); }
     100% { transform: translateY(-5px); }
+}
+
+
+#uslovi {
+    font-size: 12px;
 }
