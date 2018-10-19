@@ -39,33 +39,8 @@ const initial = () => {
     showCard(0);
     navigation(0);
 
-    /* showCard(6);
-    navigation(undefined, true);
-    animate(); */
-}
-
-/* function detectmob() {
-    if (window.innerWidth <= 800 || window.innerHeight <= 600) {
-        return true;
-    } else {
-        return false;
-    }
-} */
-
-
-const animate = () => {
-    /* console.log("hererere")
-    var btn = document.getElementsByClassName("btn-animate");
-
-    for(let i = 0; i<btn.length; i++) {
-        State.interval = setInterval(() => {
-            btn[i].style.Top += 10; 
-        } ,500)
-        
-    }
-
-    btn.animate({ top: '10px', opacity: '0.9' }, "slow");
-    btn.animate({ top: '-10px', opacity: '1' }, "slow"); */
+   /*  showCard(6);
+    navigation(undefined, true); */
 }
 
 const showCard = (index) => {
@@ -143,9 +118,8 @@ const emailForm = () => {
     // UI CHANGES
     showCard(6);
     // Video autoplay
-    var myVideo = document.getElementById("promo-video");
-    myVideo.play();
-    //animate();
+    /* var myVideo = document.getElementById("promo-video");
+    myVideo.play(); */
     //navigation(undefined, true);
     return false;
 }
