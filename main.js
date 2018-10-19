@@ -36,12 +36,12 @@ var State = {
 }
 
 const initial = () => {
-    showCard(0);
-    navigation(0);
+    /* showCard(0);
+    navigation(0); */
 
-    /* showCard(6);
+    showCard(6);
     navigation(undefined, true);
-    animate(); */
+    animate();
 }
 
 /* function detectmob() {
@@ -131,7 +131,8 @@ const activity = (activity) => {
 
 const program = (id) => {
     // Put program in state
-    State.Program = Programs[id];
+    //State.Program = Programs[id];
+    document.getElementById("promoPic").src = `promo-pictures/${id}.jpg`;
     // UI CHANGES
     showCard(5);
     navigation(undefined, true);
