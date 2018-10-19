@@ -114,7 +114,6 @@ const program = (id) => {
 }
 
 const emailForm = () => {
-    const { Program } = State;
     // UI CHANGES
     showCard(6);
     // Video autoplay
