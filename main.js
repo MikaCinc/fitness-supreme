@@ -36,11 +36,11 @@ var State = {
 }
 
 const initial = () => {
-    showCard(0);
-    navigation(0);
+    /* showCard(0);
+    navigation(0); */
 
-   /*  showCard(6);
-    navigation(undefined, true); */
+    showCard(6);
+    navigation(undefined, true);
 }
 
 const showCard = (index) => {
@@ -62,7 +62,7 @@ const navigation = (index, hide) => {
     var btns = document.getElementById("navigation").getElementsByTagName("button");
     for (let i = 0; i < btns.length; i++) {
         if (i === index) {
-            btns[i].className = "btn btn-success text-uppercase custom-btn-size";
+            btns[i].className = "btn btn-primary text-uppercase custom-btn-size";
             break;
         }
     }

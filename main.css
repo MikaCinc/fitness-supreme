@@ -247,6 +247,7 @@ body {
 
 .quote {
     font-style: italic;
+    font-size: 12px;
 }
 
 #testimonials {
@@ -259,4 +260,12 @@ body {
 
 #uslovi {
     font-size: 12px;
+}
+
+.blue-overlay {
+    color: white;
+    background: linear-gradient(to top left, #0371e8, aqua);
+    display: inline-block;
+    padding: 30px 20px;
+    border-radius: 5px;
 }
