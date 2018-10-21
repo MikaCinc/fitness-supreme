@@ -36,11 +36,11 @@ var State = {
 }
 
 const initial = () => {
-    /* showCard(0);
-    navigation(0); */
+    showCard(0);
+    navigation(0);
 
-    showCard(6);
-    navigation(undefined, true);
+    /* showCard(6);
+    navigation(undefined, true); */
 }
 
 const showCard = (index) => {
