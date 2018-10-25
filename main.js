@@ -2,31 +2,11 @@ window.onload = () => {
     initial()
 }
 
-const Programs = [
-    {
-        ID: 0,
-        Name: "Program 1",
-        Price: "20e",
-        Description: ""
-    },
-    {
-        ID: 1,
-        Name: "Program 2",
-        Price: "20e",
-        Description: ""
-    },
-    {
-        ID: 2,
-        Name: "Program 3",
-        Price: "20e",
-        Description: ""
-    },
-    {
-        ID: 3,
-        Name: "Program 4",
-        Price: "20e",
-        Description: ""
-    },
+const URLs = [
+    "https://fitness-supreme.com/checkout/?add-to-cart=2491",
+    "https://fitness-supreme.com/checkout/?add-to-cart=2500",
+    "https://fitness-supreme.com/checkout/?add-to-cart=2520",
+    "https://fitness-supreme.com/checkout/?add-to-cart=2519"    
 ]
 
 var State = {
@@ -105,9 +85,14 @@ const activity = (activity) => {
 }
 
 const program = (id) => {
-    // Put program in state
-    //State.Program = Programs[id];
-    document.getElementById("promoPic").src = `promo-pictures/${id}.jpg`;
+    var promoPic = document.getElementById("promoPic");
+    promoPic.src = `promo-pictures/${id}.jpg`;
+    promoPic.onclick = () => {
+        window.open(URLs[id-1],'_blank');
+    }
+    document.getElementById("finalButton").onclick = () => {
+        window.open(URLs[id-1],'_blank');
+    }
     // UI CHANGES
     showCard(5);
     navigation(undefined, true);
