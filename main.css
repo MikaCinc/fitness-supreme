@@ -196,6 +196,11 @@ body {
     pointer-events: none;
 }
 
+#opsti_uslovi {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .custom-answer {
     cursor: pointer;
     background-color: rgba(5,24,59,.7);

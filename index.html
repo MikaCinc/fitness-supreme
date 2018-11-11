@@ -306,13 +306,115 @@
                         </div>
                         <br />
                         <br />
-                        <button id="finalButton" type="submit" class="btn btn-primary my-1 btn-animate btn-lg">PREUZMI SVOJ PLAN
+                        <button id="finalButton" type="submit" class="btn btn-primary my-1 btn-animate btn-lg">PREUZMI
+                            SVOJ PLAN
                             TRENINGA</button>
                         <!--
                         <a href="bg.jpg" download target="_blank">Download</a>
                         -->
-                        <p class="card-text" id="uslovi">Klikom na dugme slažete se sa opštim uslovima korišćenja.</p>
+                        <p class="card-text" id="uslovi">Klikom na dugme slažete se sa <span id="opsti_uslovi"
+                                data-toggle="modal" data-target="#usloviModal">opštim
+                                uslovima korišćenja</span>.</p>
                         <p><span class="badge badge-pill badge-dark">Kontakt E-mail: Info@fitness-supreme.com</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="usloviModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Sadržaj i Usluga sajta</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="uslovi_text">
+                        Usluga koju pruža Sajt „fitness-supreme.com“ je trening plan koji se izrađuje prema Vašem
+                        zahtevu a na osnovu ličnih podataka koje sami unesete u anketu. Informacije koje pružate kada
+                        koristite sajt treba da su tačne i potpune, kao i e-mail adresa, na koju Vam isporučujemo
+                        trening plan , putem e-mail-a možete dobiti i dodatne korisne informacije. Kroz kviz na sajtu
+                        pružate informacije poput godina, pola, fizičkih karakteristika, dnevnih navika, hrane koju
+                        jedete, kako bismo uslugu koju pružamo prilagodili Vašim potrebama. Cena plana treninga je
+                        dostupna i vidljiva na sajtu, a naglašeno je i da se plaća pre dodeljivanja plana.
+                        
+                        Sajt „fitness-supreme.com“ nije odgovoran za pravilnu upotrebu i tumačenje informacija
+                        dobijenih od nas u vidu plana treninga.
+
+                        Klijent nema pravo da štampa i kopira informacije sa sajta na neki drugi sajt ili za neku drugu
+                        upotrebu osim lične.
+
+                        Sajt ne bi trebalo da koriste maloletna lica, odnosno mlađi od 18 godina, u tom slučaju treba
+                        da postoji odobrenje odgovornog punoletnog lica.
+
+                        Sajt ne bi trebalo da koriste lica koja imaju zdravstvene ili nutritivne probleme, u tom
+                        slučaju treba konsultovati svog lekara i javiti se putem mejla timu korisničkog servisa sajta.
+
+                        Politika privatnosti
+
+                        Zaštita privatnosti korisnika
+
+                        Svako prikupljanje, obradu i čuvanje Vaših podataka uradićemo u skladu sa važećim propisima
+                        Republike Srbije i novom evropskom regulativom o zaštiti podataka o ličnosti.
+
+                        U ime Sajta "fitness-supreme.com“ obavezujemo se da ćemo čuvati privatnost svih naših kupaca.
+                        Prikupljamo samo neophodne, osnovne podatke o korisnicima i podatke neophodne za poslovanje i
+                        informisanje korisnika u skladu sa dobrim poslovnim običajima i u cilju pružanja kvalitetne
+                        usluge. Svi podaci o korisnicima se strogo čuvaju i dostupni su samo zaposlenima kojima su ti
+                        podaci nužni za obavljanje posla. Svi zaposleni na Sajtu „fitness-supreme.com“ odgovorni su za
+                        poštovanje načela zaštite privatnosti.
+
+                        Zaštita poverljivih podataka
+
+                        Ukoliko odlučite da platite online našu uslugu, najvažnije je znati da plaćanje na našem
+                        Internet sajtu obavljate na siguran način, bez ikakvog rizika za Vas i bez mogućnosti
+                        zloupotrebe podataka i Vaše platne kartice, (VISA, MasterCard i Maestro) Plaćanje platnim
+                        karticama se obavlja preko PayPal-a, po vašem izboru.
+
+                        Prilikom plaćanja karticom putem interneta, unos podataka o kartici se vrši na zaštićenoj
+                        stranici PayPal-a. Sigurnost podataka prilikom plaćanja karticama, garantuje procesor platnih
+                        kartica na čijim stranicama se obavlja ceo proces plaćanja. Ni jednog trenutka Sajt
+                        “Fitness-supreme.com„nema pristup podacima sa Vaše platne kartice, pa samim tim ni ne može biti
+                        odgovoran za njihovu eventualnu zloupotrebu.
+
+                        Prilikom unošenja podataka o platnoj kartici, poverljive informacija se prenose putem javne
+                        mreže u zaštićenoj (kriptovanoj) formi upotrebom SSL protokola.
+
+                        Sigurnost podataka prilikom kupovine, garantuje PayPal, pa se tako kompletan proces naplate
+                        obavlja na stranicama procesora plaćanja. Ni jednog trenutka podaci o platnoj kartici nisu
+                        dostupni našem sistemu.
+
+                        Lični podaci koje budete unosili u odgovarajuće forme koristiće se isključivo u svrhu
+                        evidentiranja radi izrade plana ishrane i neće se prosleđivati niti ustupati drugom licu ili
+                        instituciji.
+
+                        Svi podaci koje nam ostavljate tokom procesa popunjavanja ankete su samo za našu internu
+                        upotrebu, a sa svrhom isporučivanja zatraženog proizvoda, i neće biti nikada predočena trećim
+                        licima osim u slučaju sudske odluke nadležnog suda.
+
+                        Kolačići (cookies)
+
+                        Kolačići su tekstualne datoteke smeštene na vaš računar za prikupljanje standardih informacija
+                        internet dnevnika i informacije o ponašanju posetioca. Informacije se koriste za praćenje
+                        korišćenja web stranice i izradu statističkih izveštaja o web aktivnosti. Za dodatne
+                        informacije o kolačićima posetite www.aboutcookies.org ili www.allaboutcookies.org. Možete
+                        podesiti vaš browser da ne prihvata kolačiće i gore navedene web stranice će vam reći kako
+                        ukloniti kolačiće iz vašeg browser-a. Međutim, u nekoliko slučajeva neke od naših web stranica
+                        možda neće funkcionisati ako uklonite kolačiće iz vašeg browsera.
+
+                        Korišćenje naših servisa podrazumeva saglasnost korisnika sa svim navedenim na ovoj strani.
+                        Sajt „fitness-supreme.com”se obavezuje da će se pridržavati svega navedenog, a sve promene
+                        uslova postaju važeće tek nakon objavljivanja na ovoj strani. Sajt „fitness-supreme.com"
+                        zadržava pravo da unosi izmene u ova Pravila zaštite privatnosti. U slučaju da sajt
+                        „fitness-supreme.com”unese materijalnu izmenu u ova Pravila zaštite privatnosti, ona će biti
+                        navedena ovde. Preporučujemo vam da redovno posećujete ovu stranicu jer ako nastavite da
+                        koristite ovaj Sajt nakon unošenja bilo kakvih izmena u Pravila zaštite privatnosti, na taj
+                        način izražavate svoju saglasnost sa unetim izmenama.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Slažem se</button>
                     </div>
                 </div>
             </div>
